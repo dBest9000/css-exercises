@@ -5,7 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
-  
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -17,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
 }
 
 input {
@@ -26,17 +28,55 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
-
+/* This section is for the header. I may be able to apply some of the same for the
+footer and then combine the common ones to make the CSS cleaner.*/
 .header {
   display: flex;
-
-  background-color: #eeeeee;
+  justify-content: space-between;
 }
 
+/* This section is going to be for the content portion which needs to be centered.*/
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+}
+
+/* This the footer section and it might be difficult but I got this. */
 .footer {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
   background-color: #eeeeee;
 }
+
+/* I was able to just combine the ul and li from both footer and header */
+ul {
+  display: flex;
+  
+}
+
+li {
+  padding-right: 50px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 
 
